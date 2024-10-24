@@ -201,3 +201,40 @@ pipeline {
         }
     }
 }
+===========================================================================================================
+=>Plugins Install: sonarqube scanner, eclipse temurin installer, owsap dependency-check, Docker(4)
+=>sudo apt install make
+
+=>Credencials: 
+sonar token:(secret text-adminstration-security-users-token-genarate) =sonar-token & secreat token 
+docker: (docker hub-account settings- personal auth token-genarate a new token)= username & Auth token
+
+=>System:
+Sonarqube servers-sonarqube installations
+name: sonar-server
+URL: sonar-URL
+select-sonar authentication
+
+=>Tools:
+JDK: jdk17
+install automaticaly from adoptium.net (jdk-17.0.12+7)
+
+Git : git
+
+SonarQube Scanner installations:
+Add SonarQube Scanner
+name: sonar-scanner
+(install automatically)-install from mavem central
+sonar scanner-5.0.1
+
+Dependency-Check installations:
+name : DP-Check
+Install automatically
+install from git hub
+dependency check 6.2.0
+
+Docker installation:
+name:docker
+Install automatically
+download from docker
+latest
